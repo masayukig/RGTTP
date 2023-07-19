@@ -12,7 +12,7 @@
 
 # 1. Make a python list of the 5 items above and print it out.
 print("# 1. Make a python list of the 5 items above and print it out.")
-my_shopping_list: list = ["Apples", "Milk", "Bread", "Chicken", "Pasta"]
+my_shopping_list: list[str] = ["Apples", "Milk", "Bread", "Chicken", "Pasta"]
 print(my_shopping_list)
 
 # 2. Use python as your calculator and print out the total cost of
