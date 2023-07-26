@@ -6,15 +6,16 @@
 #    to take the argument passed into format and print a
 #    sentence of your choice.
 
-# INSERT YOUR CODE HERE
+print("My firstname: {0}, family name: {1}".format("Masayuki", "Igawa"))
 
 # 2. Use string formatting with positional arguments and
 #    print the sentence: "Don't Panic!"
 
-# INSERT YOUR CODE HERE
+print("{0} {1}".format("Don't", "Panic!"))
 
 # 3. Use string formatting with named arguments and
 #    print the sentence: "[name] is really [what]!" and
 #    fill in the brackets with your name and "great".
 
-# INSERT YOUR CODE HERE
+d = dict(name="Masayuki", what="great")
+print("{0[name]} is really {0[what]}!".format(d))
