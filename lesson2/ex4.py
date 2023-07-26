@@ -16,5 +16,5 @@ for k, v in versions.items():
 # 3. Print numbers in decimal, byte and hexadecimal form.
 
 for k, v in versions.items():
-    print("Codename: {0}, version(decimal): {1:d}, (byte): {1:c},"
+    print("Codename: {0}, version(decimal): {1:d}, (byte): {1:b},"
           " (hexdecimal): {1:x}".format(k, v))
