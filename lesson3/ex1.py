@@ -7,37 +7,55 @@ shopping_list: list[str] = ['apples', 'milk', 'bread', 'carrot', 'pasta']
 
 # 1. Add banana to a shopping list.
 
-# INSERT CODE HERE
+shopping_list.append('banana')
+print(shopping_list)
 
 # 2. Add chocolate in the third position in your shopping list
 
-# INSERT CODE HERE
+shopping_list.insert(2, "chocolate")
+print(shopping_list)
+
 
 # 3. Extend shopping list by the following items:
 # ['chocolate', 'carrot', 'avocado']
 
 # INSERT CODE HERE
+other_list: list[str] = ['chocolate', 'carrot', 'avocado']
+shopping_list.extend(other_list)
+
+print(shopping_list)
 
 # 4. Remove first chocolate only
 
-# INSERT CODE HERE
+idx: int = shopping_list.index('chocolate')
+print(idx)
+shopping_list.remove('chocolate')
+print(shopping_list)
 
 # 5. Remove last item from the list
 
-# INSERT CODE HERE
+shopping_list.pop()
 
 # 6. Remove third item from the list
 
-# INSERT CODE HERE
+shopping_list.pop(3)
 
 # 7. Count how many carrots are in the shopping list?
 
-# INSERT CODE HERE
+print(shopping_list)
+print(shopping_list.count('carrot'))
+
 
 # 8. Get the index of the chocolate (careful can throw traceback)
 
-# INSERT CODE HERE
+try:
+    print(shopping_list.index('chocolate'))
+except ValueError as e:
+    print(e)
 
 # 9. Get the index of carrot, make sure this code is executed
 
-# INSERT CODE HERE
+try:
+    print(shopping_list.index('carrot'))
+except ValueError as e:
+    print(e)
