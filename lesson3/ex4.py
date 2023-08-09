@@ -21,4 +21,14 @@
 #    - True
 #    - False
 
-# INSERT CODE HERE
+
+class ShoppingList:
+    shopping_list: list[str] = ['apples', 'milk', 'bread', 'carrot', 'pasta']
+
+    def in_list(self, item: str) -> str:
+        presence = "is" if item in self.shopping_list else "is not"
+        return "{0} {1} in the shopping list".format(item, presence)
+
+
+s = ShoppingList()
+print(s.in_list("apples"))
