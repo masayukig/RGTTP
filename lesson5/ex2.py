@@ -3,7 +3,6 @@
 """
 
 # 1. Write a while true loop to print "Forever" forever
-
 # while True:
 #     print("Forever")
 
@@ -15,7 +14,8 @@ while (n <= 42):
     n += 1
 
 # 3. Write a while true loop to print numbers from 0 to 42
-n: int = 0
+# n: int = 0
+int = 0
 while True:
     if (n > 42):
         break
@@ -24,7 +24,8 @@ while True:
 
 # 4. Write a while true loop to print numbers from 0 to 45, and instead
 #    of 42, print "I am 42!" break at number 45.
-n: int = 0
+# n: int = 0
+int = 0
 while True:
     if (n > 45):
         break
@@ -38,7 +39,8 @@ while True:
 # 5. Write a while-else loop to count to 2, and after that print
 #    "It's my turn now!" using else statement.
 
-n: int = 0
+# n: int = 0
+int = 0
 while True:
     if (n > 45):
         break
